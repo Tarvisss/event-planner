@@ -1,0 +1,321 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require bootstrap
+*= require grails
+*= require main
+*= require mobile
+*= require_self
+*/
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #202020;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+}
+
+.content {
+    padding-bottom: 12rem;
+}
+
+/* for welcome page only///////////////////////////////////////////////// */
+.welcome-content {
+  height: 100vh;
+  background-image: url("/assets/pexels-gabby-k-6289029 (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#Welcome {
+  padding: 8.5rem;
+  text-align: center;
+  color: #007BFF;
+  text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+
+#Welcome img {
+  height: 120px;
+  width: 120px;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+#Welcome img:hover {
+transform: scale(1.1);
+opacity: 70%;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 3rem;
+}
+/*Main Navbar ////////////////////////////////////////////////////////////////*/
+.navbar {
+  height: 80px;
+  background-color: #0f65bb;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 0 10px black;
+}
+
+.navbar .navbar-brand img {
+  width: 110px;
+  height: 110px;
+}
+
+.navbar .nav {
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar .nav li a {
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem;
+  transition: background-color 0.5s ease, color 0.4s ease;
+}
+
+.navbar .nav li a:hover {
+  background-color: #dddddda2;
+  border-radius: 4px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px black;
+}
+
+.navbar-collapse {
+  background-color: #0f65bb;
+}
+/* Footer /////////////////////////////////////////////////////////////////////////////////*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  height: 160px;
+  background-color: #0f65bb;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 0 8px black;
+  text-shadow: 1px 1px 0px black;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer .col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer strong {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.footer p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.footer-image {
+    height: 120px;
+    width: 120px;
+}
+
+/* Spinner */
+#spinner {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Utility classes */
+.centered {
+  text-align: center;
+}
+
+.float-left {
+  float: left;
+  margin-right: 1rem;
+}
+
+/* General page container////////////////////////////////////////////////////////////////////////// */
+#content {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Inner Page Navigation //////////////////////////////////////////////////////////////////////////////// */
+
+.nav {
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 400;
+  
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* <-- centers the list items */
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li a {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 0px black;
+  text-decoration: none;
+  background-color: #007bff;
+  border-radius: 6px;
+  padding: 0.5rem;
+  transition: opacity 0.5s ease, color 0.4s ease, background-color 0.4s ease, border 0.5s ease-in-out;
+}
+
+.nav ul li a:hover {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007BFF;
+  border-radius: 6px;
+  opacity: 85%;
+}
+
+/* Create Form Section */
+#Form {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 4px #007bffc0;
+}
+
+#Form h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+
+}
+
+/* Flash message styles */
+.message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.errors {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  color: #721c24;
+}
+
+.errors li {
+  margin-bottom: 0.5rem;
+}
+
+/* Form styling */
+fieldset.form {
+  border: none;
+  margin-bottom: 1.5rem;
+  
+}
+
+fieldset.buttons {
+  text-align: center;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+button.save {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button.save:hover {
+  background-color: #0056b3;
+}
+
+.pagination {
+    gap: .5rem;
+}
+/* Mobile device css ////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 576px) {
+  .navbar-brand span {
+    font-size: 14px;
+  }
+  
+}
